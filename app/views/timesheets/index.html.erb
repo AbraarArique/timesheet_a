@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-right">
+      <%= link_to "New Timesheet", new_timesheet_path, class: "btn btn-info" %>
+    </div>
+    <div class="col-xs-12">
+      <% if not @timesheets.empty? %>
+        <div class="table-responsive">
+          <table class="table table-stripped table-bordered table-hover">
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+            <% @timesheets.each do |i| %>
+              <tr>
+                <td><%= i.created_at %></td>
+                <td><%= i.description %></td>
+                <td><%= i.status %></td>
+                <td>
+                  <%= link_to "Edit", edit_timesheet_path(i), class: "btn btn-default" %>
+                  <%= link_to "Delete", timesheet_path(i), method: :delete, class: "btn btn-danger" %>
+                </td>
+              </tr>
+            <% end %>
+          </table>
+        </div>
+      <% else %>
+        <div class="nothing-box text-center">
+          <p><i class="glyphicon glyphicon-time"></i></p>
+          <p>You do not have any time sheets entered.</p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

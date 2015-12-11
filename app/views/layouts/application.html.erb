@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TimesheetApp</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% if alert %><p class="alert alert-danger"><%= alert %></p><% end %>
+<% if notice %><p class="alert alert-info"><%= notice %></p><% end %>
+<nav class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <%= link_to "Sample Logo", timesheets_path, class: "navbar-brand" %>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><%= link_to "Sign Out", destroy_staff_session_path, method: :delete %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<%= yield %>
+
+</body>
+</html>

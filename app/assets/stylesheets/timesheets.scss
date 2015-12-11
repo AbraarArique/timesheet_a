@@ -1,0 +1,28 @@
+// Place all the styles related to the timesheets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.checkbox input[type="checkbox"] {
+  margin-left: 0;
+}
+
+.alert {
+  margin-bottom: 0;
+}
+
+.nothing-box {
+  width: 99%;
+  height: 95%;
+  border: 2px dashed #333333;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 10px;
+}
+
+.nothing-box p:first-child {
+  font-size: 150px;
+}
+
+.nothing-box p:last-child {
+  font-size: 20px;
+}
