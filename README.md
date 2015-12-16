@@ -1,8 +1,8 @@
-# Rails Timesheet App
+# Timesheet A
 
 ## Introduction
 
-Rails Timesheet App is a staff timesheet entry and management app built using Ruby on Rails. It's core features are the following:
+Timesheet A is a staff timesheet entry and management app built using Ruby on Rails. It's core features are the following:
 
   - Create a "Timesheet" for each worked time
   - Add a description to a timesheet
@@ -34,12 +34,12 @@ This app is built using:
   - Clone this repository into your local machine:
 
     ```
-    $ git clone https://github.com/AbraarAriquePro/rails_timesheet_app.git
+    $ git clone https://github.com/AbraarAriquePro/timesheet_a.git
     ```
   - Then change to the directory you just cloned:
 
     ```
-    $ cd rails_timesheet_app
+    $ cd timesheet_a
     ```
   - Install all the Gems and their dependencies
 

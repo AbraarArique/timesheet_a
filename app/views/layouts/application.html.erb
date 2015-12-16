@@ -9,14 +9,14 @@
 <body>
 <% if alert %><p class="alert alert-danger"><%= alert %></p><% end %>
 <% if notice %><p class="alert alert-info"><%= notice %></p><% end %>
-<nav class="navbar navbar-default navbar-inverse">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <%= link_to "Sample Logo", timesheets_path, class: "navbar-brand" %>
+      <%= link_to "Timesheet A", timesheets_path, class: "navbar-brand" %>
     </div>
     <div>
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><%= link_to "Sign Out", destroy_staff_session_path, method: :delete %></li>
+        <li class="active"><p class="navbar-btn"><%= link_to "Sign Out", destroy_staff_session_path, method: :delete, class: 'btn btn-success' %></p></li>
       </ul>
     </div>
   </div>
